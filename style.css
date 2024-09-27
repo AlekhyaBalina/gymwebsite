@@ -1,0 +1,281 @@
+*{margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*font-family: 'poppins',sans-serif;*/
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    
+}
+.header img{
+    margin: 0px;
+    mix-blend-mode:multiply;
+    width:120px ;
+    height:120px ;
+}
+.header{
+    display: flex;
+    
+}
+.header h1{
+    margin-top: 40px;
+    color: rgb(86, 86, 86);
+}
+.header h1 span{
+    color: red;
+    font-size: 50px;
+}
+.header{
+    background-image: url(https://hdcdnsun2.r.worldssl.net/sites/www.hypnosisdownloads.com/files/product-images/gym-motivation_0.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 600px;
+}
+/*------------------------------content----------------------*/
+.content {
+    padding: 10px;
+
+}
+.title h2{
+   text-align: center;
+   padding: 10px;
+   font-weight: bold;
+}
+.cont-1 p{
+    text-align: justify;
+}
+.why_cont h2{
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px;
+}
+.why_cont h4{
+   text-align: center;
+   font-weight: 1px;
+   color: rgb(33, 124, 215);
+}
+.gifts{
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; /* Full viewport height, can be adjusted */
+      text-align: center;
+}
+.gifts img{
+    align-self: center;
+    width: 200px;
+    height:200px ;
+}
+.voucher img{
+    width: 90%;
+    height: 200px;
+}
+.vaucher p{
+    text-align: justify;
+}
+#offer{
+    text-align: justify;
+}
+.voucher h4{
+    color: #3498db;
+    margin: 0 auto;}
+/*-----------login-------------------------*/
+.signup {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.signup h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #666;
+}
+
+/* Styling for the remember-forget section */
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.remember-forget label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.remember-forget input {
+    margin-right: 5px;
+}
+
+.remember-forget a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Styling for the register link */
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+/*---------------features---------------------*/
+.feature {
+   margin: 20px;
+    text-align: center;
+    border: 1px solid rgb(209, 207, 207);
+    border-radius: 10px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+
+}
+.f img{
+    width: 100px;
+    height: 100px;
+} 
+.container {
+    grid-template-columns: 1fr;
+}
+
+
+
+
+
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "content content"
+            "sign feature1"
+            "feature2 feature3";
+    }
+    .header {
+        grid-area: header;
+    }
+    .content {
+        grid-area: content;
+    }
+    .signup {
+        grid-area: sign;
+    }
+    .feature1 {
+        grid-area: feature1;
+    }
+    .feature2 {
+        grid-area: feature2;
+    }
+    .feature3 {
+        grid-area: feature3;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "feature1 feature2 feature3"
+            "sign sign sign"
+            "content content content";
+    }
+    .sign {
+        grid-column:2/3;
+    /* This centers the signup form in the second column */
+    }
+    /* Centering h2 within the feature1 container */
+#featuretitle {
+    text-align: center;
+    margin: 0 auto; /* Optional: If you want to ensure it's centered inside the parent element */
+    font-size: 24px; /* Adjust the font size if needed */
+    font-weight: bold; /* Style it as per your design */
+    padding: 10px 0; /* Add spacing around the title */
+}
+/* Basic styles for layout elements */
+.gift img{
+    width: 250px;
+    height: 300px;
+}
+.content{
+    margin: 0 auto;
+    padding: 50px;
+}
+.voucher img{
+    width: 100%;
+    height: 350px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+.voucher h4{
+    color: #3498db;
+    margin: 0 auto;
+    font-weight: 50px;
+}
+
+
+    
+    
+}
